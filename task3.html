@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Task 3 — Таблица и форма</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="main">
+    <!-- Header -->
+    <div class="header">
+      <div class="container">
+        <h1 class="site-title">Ristorante Aurora</h1>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="container clearfix">
+        <div class="nav-left">
+          <a href="index.html" class="nav-link">Task 1</a>
+          <a href="exercise2/index.html" class="nav-link">Task 2</a>
+          <a href="task3.html" class="nav-link is-active">Task 3</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content container">
+
+      <!-- ====== TABLE ====== -->
+      <section class="table-card">
+        <h2 id="gradesTitle">Оценки студентов (семестр 1)</h2>
+        <table class="table">
+          <thead>
+            <tr><th colspan="3">Student Grades — Term 1</th></tr>
+            <tr><th>Имя</th><th>Предмет</th><th>Оценка</th></tr>
+          </thead>
+          <tbody>
+            <tr class="highlight-row"><td>Айнур</td><td>Математика</td><td>A</td></tr>
+            <tr><td rowspan="2">Арман</td><td>Физика</td><td>B+</td></tr>
+            <tr><td>Информатика</td><td>A-</td></tr>
+            <tr><td>Диана</td><td>Химия</td><td>B</td></tr>
+          </tbody>
+          <tfoot>
+            <tr><td colspan="3">Итоги семестра: примерные данные</td></tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <!-- ====== FORM ====== -->
+      <section class="form-card">
+        <h2>Обратная связь</h2>
+        <form id="feedbackForm" action="#" method="post">
+          <label for="name">Имя</label>
+          <input id="name" name="name" type="text" placeholder="Ваше имя" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+          <label for="role">Роль</label>
+          <select id="role" name="role">
+            <option>Student</option>
+            <option>Teacher</option>
+            <option>Other</option>
+          </select>
+
+          <div class="radios">
+            <span class="label">Получать новости?</span>
+            <label><input type="radio" name="news" value="yes"> Yes</label>
+            <label><input type="radio" name="news" value="no"> No</label>
+          </div>
+
+          <label for="comments">Комментарии</label>
+          <textarea id="comments" name="comments" rows="4" placeholder="Ваше сообщение..."></textarea>
+
+          <button class="btn-submit" type="submit">Отправить</button>
+        </form>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="container">
+      <p>© 2025 Ristorante Aurora. Все права защищены.</p>
+    </div>
+  </div>
+
+</body>
+</html>
